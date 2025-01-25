@@ -157,19 +157,19 @@ public class java_arrays {
 //    }
 
 
-//    public static void maxsubarray_kedanes(int numbers[]){         //time complexity O(n) i.e least
-//        int ms=Integer.MIN_VALUE;
-//        int cs=0;
-//
-//        for (int i=0;i<numbers.length;i++){
-//            cs=cs+numbers[i];
-//            if(cs<0){
-//                cs=0;
-//            }
-//            ms=Math.max(cs,ms);
-//        }
-//        System.out.println("Maximum sum of the subarray is = "+ ms);
-//    }
+    public static void maxsubarray_kedanes(int numbers[]){         //time complexity O(n) i.e least
+        int ms=Integer.MIN_VALUE;
+        int cs=0;
+
+        for (int i=0;i<numbers.length;i++){
+            cs=cs+numbers[i];
+            if(cs<0){
+                cs=0;
+            }
+            ms=Math.max(cs,ms);
+        }
+        System.out.println("Maximum sum of the subarray is = "+ ms);
+    }
 
 
 //    public static int trappedrainwater(int height[]){
@@ -212,24 +212,24 @@ public class java_arrays {
 
 
     //Decreasing subarray
-static  int sub(int [] arr ,int n){
-        int len=1;
-        int count=0;
-        for(int i=0;i<n-1;i++){
-     if(arr[i+1]  < arr[i]){
-         len++;
-     }
-     else{
-         count += (((len-1)*len)/2);
-         len=1;
-     }
-
-        }
-       if(len>1){
-           count += (((len-1)*len)/2);
-       }
-       return count;
-}
+//static  int sub(int [] arr ,int n){
+//        int len=1;
+//        int count=0;
+//        for(int i=0;i<n-1;i++){
+//     if(arr[i+1]  < arr[i]){
+//         len++;
+//     }
+//     else{
+//         count += (((len-1)*len)/2);
+//         len=1;
+//     }
+//
+//        }
+//       if(len>1){
+//           count += (((len-1)*len)/2);
+//       }
+//       return count;
+//}
 
 
 
@@ -238,9 +238,9 @@ static  int sub(int [] arr ,int n){
 
     public static void main(String[] args) {
 
-        int [] arr={100,3,1,13};
-        int n = arr.length;
-        System.out.println(sub(arr,n));
+//        int [] arr={100,3,1,13};
+//        int n = arr.length;
+//        System.out.println(sub(arr,n));
 // Array index start from 0
 //        there are 3 ways to declare array
 //        1. int [] marks= new int [5];    Declration and Memory Allocation
@@ -253,6 +253,8 @@ static  int sub(int [] arr ,int n){
 //        marks [1]=90;
 //        System.out.println(marks [1]);
 //        System.out.println(rollno [2]);
+
+
 
 
         //Printing array using for loop
@@ -324,8 +326,8 @@ static  int sub(int [] arr ,int n){
 //        int numbers[]={1,-2,6,-1,3};
 //        maxsubarray_prefixsum(numbers);
 
-//        int numbers[]={-2,-3,4,-1,-2,1,5,-3};
-//        maxsubarray_kedanes(numbers);
+        int numbers[]={-2,-3,4,-1,-2,1,5,-3};
+        maxsubarray_kedanes(numbers);
 
 //        int height[]={4,2,0,3,2,5};
 //        System.out.println(trappedrainwater(height));

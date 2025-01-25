@@ -1,7 +1,5 @@
 public class SeconLargestElementInArray {
 
-
-
     public static int SecondLargest(int [] arr){
         int max=arr[0];
         int secondmax=arr[0];

@@ -23,11 +23,26 @@ public class repeatition_of_no {
 //            System.out.print(n[i]+" ");
 //        }
 
-         int num=1234;
+        //counting no of 2's repeated
+//        int num=2123242324212;
+//        int count=0;
+//        while(num>0){
+//            int remainder=num%10;
+//            if(remainder==2) {
+//                count++;
+//            }
+//            num/=10;
+//        }
+//        System.out.println(count);
+
+
+
+        //reverse of the number
+         int num1=1234;
          int ans=0;
-         while(num>0){
-             int rem=num%10;
-             num/=10;
+         while(num1>0){
+             int rem=num1%10;
+             num1/=10;
              ans=ans*10+rem;
 
          }

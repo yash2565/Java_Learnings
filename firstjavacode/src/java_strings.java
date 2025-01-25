@@ -62,7 +62,7 @@ public class java_strings {
 //        return sb.toString();
 //    }
 
-//    public static String compressor(String str){                    //it will compress a strinng aaaaaabbbbbccccc to a6b5c5
+//    public static String compressor(String str){        //it will compress a strinng aaaaaabbbbbccccc to a6b5c5
 //        String newStr="";
 //        for(int i=0;i<str.length();i++){
 //            Integer count=1;

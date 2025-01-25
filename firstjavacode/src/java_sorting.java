@@ -1,17 +1,17 @@
 import java.util.*;
 public class java_sorting {
 
-//    public static void bubblesort(int arr[]){   //O(n^2) time complexity
-//        for(int turn=0;turn<arr.length-1;turn++){
-//            for(int j=0;j<arr.length-1-turn;j++){
-//                if(arr[j]>arr[j+1]){
-//                    int temp=arr[j];   //swapping logic
-//                    arr[j]=arr[j+1];
-//                    arr[j+1]=temp;
-//                }
-//            }
-//        }
-//    }
+    public static void bubblesort(int arr[]){   //O(n^2) time complexity
+        for(int turn=0;turn<arr.length-1;turn++){
+            for(int j=0;j<arr.length-1-turn;j++){
+                if(arr[j]>arr[j+1]){
+                    int temp=arr[j];   //swapping logic
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+    }
 
 //    public static void selectionsort(int arr[]){  //O(n^2) time complexity
 //        for(int i=0;i<arr.length-1;i++){
@@ -74,11 +74,11 @@ public class java_sorting {
     public static void main(String[] args) {
 
         //Bubble sort
-//        int arr[]={5,4,2,3,1};
-//        bubblesort(arr);
-//        for (int i=0;i<arr.length;i++){
-//            System.out.print(arr[i]+" ");
-//        }
+        int arr[]={5,4,2,3,1};
+        bubblesort(arr);
+        for (int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
 
 
         //Selection Sort
@@ -96,16 +96,16 @@ public class java_sorting {
 //        }
 
         //Inbuilt Sort
-        Integer arr[]={5,-5,4,-4,1,-1,3,-3,2,-2,0};                     //ReverseOrder function work on Object Type variable
-        Arrays.sort(arr);
-        for(int i=0;i<arr.length;i++){
-            System.out.print(arr[i]+" ");
-        }
-        System.out.println();
-        Arrays.sort(arr,0,4);
-        for(int i=0;i<arr.length;i++){
-            System.out.print(arr[i]+" ");
-        }
+//        Integer arr[]={5,-5,4,-4,1,-1,3,-3,2,-2,0};                     //ReverseOrder function work on Object Type variable
+//        Arrays.sort(arr);
+//        for(int i=0;i<arr.length;i++){
+//            System.out.print(arr[i]+" ");
+//        }
+//        System.out.println();
+//        Arrays.sort(arr,0,4);
+//        for(int i=0;i<arr.length;i++){
+//            System.out.print(arr[i]+" ");
+//        }
 
 
         //Counting sort
